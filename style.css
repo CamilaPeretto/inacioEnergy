@@ -6,6 +6,10 @@ box-sizing: border-box;
           
   body {
     background-color: #f4f2e2;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%;
+    overflow-x: hidden;
   }
           
   header {
@@ -35,37 +39,43 @@ box-sizing: border-box;
     font-family: "Helvetica", sans-serif;
     }
 
-  nav {
+/* Ajustes para a navegação responsiva */
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #000f52;
+  flex-wrap: wrap;
   height: 8vh;
-  }
-    .nav-list {
-    list-style: none;
-    display: flex;
-    font-family: "Codec Pro", sans-serif;
-    }
-          
-    .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-    }
-          
-    .mobile-menu {
-    display: none;
-    cursor: pointer;
-    }
-          
-    .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: all 0.3s;
-    }
-          
+  font-family: "Helvetica", sans-serif;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.mobile-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+  margin: 8px;
+}
+   
+
+
     /* LAYOUT PRINCIPAL */
     .hero {
     display: flex;
@@ -82,7 +92,7 @@ box-sizing: border-box;
   
   .right {
     flex: 1;
-    text-align: justify;
+    text-align: left;
   }
   
   /* IMAGEM ESTÁTICA */
@@ -175,7 +185,7 @@ padding: 80px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: justify;
+  text-align: left;
   border-radius: 20px;
   border: 0px;
   padding: 30px;
@@ -295,7 +305,7 @@ padding: 80px 20px;
   border-radius: 20px;
   max-width: 600px;
   font-size: 1.2em;
-  text-align: justify;
+  text-align: left;
   font-family: "Codec Pro", sans-serif;
 }
 
@@ -362,7 +372,7 @@ padding: 80px 20px;
 .vantagem p {
   font-size: 1em;
   color: #000;
-  text-align: justify;
+  text-align: left;
 }
 
 .contato {
@@ -452,4 +462,146 @@ footer p {
 
 .ajuste2 {
   font-family: "Codec Pro", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  
+  .hero {
+      flex-direction: column;
+      text-align: center;
+      
+  }
+}
+@media (max-width: 768px) {
+  .hero .right {
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .hero .headline, .hero .subheadline {
+      text-align: center;
+  }
+  
+  .oportunidade ul, .vantagens-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .contato {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+  }
+  
+  .contact-item p {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  
+  .subheadline {
+      font-size: 1rem;
+      text-align: center;
+  }
+  
+  .cta-button {
+      font-size: 14px;
+      padding: 10px 15px;
+  }
+  
+  .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+  }
+  
+  .como-funciona .conteudo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .como-funciona .fazenda-img {
+      order: -1;
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+  }
+  
+  .contact-container {
+      width: 100%;
+      max-width: 400px;
+  }
+  
+  .contact-item p {
+      font-size: 1rem;
+      word-break: break-word;
+  }
+}
+
+@media (max-width: 999px) {
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #000f52;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }
