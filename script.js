@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const navList = document.querySelector(".nav-list");
+  if (navList) {
+      navList.classList.remove("active");
+      navList.style.right = "-50vw"; // Garante que o menu comece escondido
+  }
+});
+
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
@@ -42,10 +50,3 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
-
-document.addEventListener("DOMContentLoaded", function() {
-  const navList = document.querySelector(".nav-list");
-  if (navList) {
-      navList.classList.remove("active");
-  }
-});
