@@ -559,7 +559,7 @@ footer p {
       justify-content: center;
   }
   .subheadline {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
       justify-content: center;
   }
@@ -620,7 +620,7 @@ footer p {
   }
   
   .subheadline {
-      font-size: 1.1rem;
+      font-size: 1rem;
       text-align: center;
       display: flex;
       justify-content: center;
