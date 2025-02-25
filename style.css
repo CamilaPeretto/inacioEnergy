@@ -560,6 +560,7 @@ footer p {
   .cta-button {
       font-size: 2rem;
       padding: 10px 20px;
+      align-items: end;
   }
   
   .sobre p {
@@ -616,6 +617,7 @@ footer p {
   .cta-button {
       font-size: 19px;
       padding: 10px 15px;
+      align-items: end;
   }
   
   .contact-item {
@@ -689,6 +691,7 @@ footer p {
   .cta-button {
     font-size: 15px;
     padding: 5px 7px;
+    align-items: end;
 }
 
 .contact-item p {
