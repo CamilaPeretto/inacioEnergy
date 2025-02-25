@@ -626,7 +626,11 @@ footer p {
       justify-items: center;
       padding: 0 10px;
   }
-  
+  .subheadline p {
+    text-align: justify;
+    justify-content: justify;
+    justify-items: justify;
+  }
   .cta-button {
       font-size: 19px;
       padding: 10px 15px;
