@@ -719,3 +719,54 @@ footer p {
   font-size: 0.6rem;
 }
 }
+
+/* Estilizando a área do Google */
+.google-card {
+  font-family: Helvetica, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Container para a URL e logo */
+.google-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Estilizando a logo */
+.google-logo {
+  width: 16px;
+  height: 16px;
+}
+
+/* Estilizando o link principal */
+.google-link {
+  font-size: 18px;
+  font-weight: normal;
+  color: #1a0dab; /* Azul padrão do Google */
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Quando passa o mouse no link */
+.google-link:hover {
+  text-decoration: underline;
+}
+
+/* URL verde abaixo do título */
+.url-estilizada {
+  font-size: 14px;
+  color: #006621; /* Verde padrão do Google */
+  text-decoration: none;
+  display: block;
+}
+
+/* Estilizando a descrição abaixo do link */
+.google-description {
+  font-size: 14px;
+  color: #4d5156; /* Cinza padrão do Google */
+  margin-top: 5px;
+}
