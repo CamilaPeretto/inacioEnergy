@@ -544,6 +544,9 @@ footer p {
   .hero .right {
       padding: 20px;
       text-align: center;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
   }
   
   .hero .headline, .hero .subheadline {
@@ -598,6 +601,13 @@ footer p {
 }
 
 @media (max-width: 480px) {
+
+  .right{
+    text-align: center;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+  }
 
   .headline {
       font-size: 1.2rem;
@@ -682,6 +692,14 @@ footer p {
 }
 
 @media (max-width: 320px) {
+
+  .right{
+    text-align: center;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+  }
+
   .yellow {
     font-size: 1.9rem;
   }
