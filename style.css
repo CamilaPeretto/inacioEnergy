@@ -81,7 +81,7 @@ nav {
   .nav-list {
     position: absolute;
     top: 8vh;
-    right: 0;
+    right: -50vw;
     width: 50vw;
     height: 80vh;
     background: #000f52;
@@ -95,6 +95,7 @@ nav {
 }
 
 .nav-list.active {
+    right: 0;
     transform: translateX(0);
     display: flex; /* Mostra o menu quando ativo */
     visibility: visible; /* Torna visível */
