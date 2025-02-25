@@ -599,7 +599,13 @@ footer p {
 }
 
 @media (max-width: 480px) {
-
+.left {
+  padding: 0 10px;
+  text-align: center;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+}
   .headline {
       font-size: 1.2rem;
       text-align: center;
