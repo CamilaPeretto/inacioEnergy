@@ -533,7 +533,6 @@ footer p {
   .hero {
       flex-direction: column;
       text-align: center;
-      
   }
 
   .vantagem {
@@ -544,22 +543,32 @@ footer p {
   .hero .right {
       padding: 20px;
       text-align: center;
+      display: flex;
+      justify-content: center;
   }
   
   .hero .headline, .hero .subheadline {
+    display: flex;
+      justify-content: center;
       text-align: center;
       
   }
   .headline {
     font-size: 3rem;
+    display: flex;
+      justify-content: center;
   }
   .subheadline {
     font-size: 2rem;
+    display: flex;
+      justify-content: center;
   }
 
   .cta-button {
       font-size: 2rem;
       padding: 10px 20px;
+      display: flex;
+      justify-content: center;
   }
   
   .sobre p {
@@ -602,6 +611,8 @@ footer p {
   .headline {
       font-size: 1.2rem;
       text-align: center;
+      display: flex;
+      justify-content: center;
   }
 
   .yellow {
@@ -611,11 +622,15 @@ footer p {
   .subheadline {
       font-size: 1.1rem;
       text-align: center;
+      display: flex;
+      justify-content: center;
   }
   
   .cta-button {
       font-size: 19px;
       padding: 10px 15px;
+      display: flex;
+      justify-content: center;
   }
   
   .contact-item {
@@ -689,6 +704,8 @@ footer p {
   .cta-button {
     font-size: 15px;
     padding: 5px 7px;
+    display: flex;
+      justify-content: center;
 }
 
 .contact-item p {
