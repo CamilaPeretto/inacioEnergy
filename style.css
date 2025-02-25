@@ -529,7 +529,12 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-  
+  hr {
+    border: none;
+    height: 2px;
+    background: #000f52; /* Cor da linha */
+    margin: 20px 0;
+}
   .hero {
       flex-direction: column;
       text-align: center;
@@ -541,6 +546,13 @@ footer p {
   }
 }
 @media (max-width: 768px) {
+  hr {
+    border: none;
+    height: 2px;
+    background: #000f52; /* Cor da linha */
+    margin: 20px 0;
+}
+
   .hero .right {
       padding: 20px;
       text-align: center;
@@ -575,8 +587,6 @@ footer p {
       align-items: center;
       
   }
-
-  
   
   .contato {
       display: flex;
@@ -602,12 +612,12 @@ footer p {
 
 @media (max-width: 480px) {
 
-  .right{
-    text-align: center;
-      justify-items: center;
-      justify-content: center;
-      align-items: center;
-  }
+  hr {
+    border: none;
+    height: 2px;
+    background: #000f52; /* Cor da linha */
+    margin: 20px 0;
+}
 
   .headline {
       font-size: 1.2rem;
