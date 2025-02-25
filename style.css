@@ -89,14 +89,17 @@ nav {
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    display: none; /* Esconde o menu por padrão */
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden;  /* Esconde sem remover do fluxo */
+    opacity: 0; /* Deixa invisível */
 }
 
 .nav-list.active {
     transform: translateX(0);
     display: flex; /* Mostra o menu quando ativo */
-}
+    visibility: visible; /* Torna visível */
+    opacity: 1; /* Deixa visível */
+  }
 
   .nav-list li {
     margin-left: 0;
@@ -105,10 +108,6 @@ nav {
   .mobile-menu {
     display: block;
   }
-}
-
-.nav-list.active {
-  transform: translateX(0);
 }
 
 @keyframes navLinkFade {
@@ -599,6 +598,7 @@ footer p {
 }
 
 @media (max-width: 480px) {
+
   .headline {
       font-size: 1.2rem;
       text-align: center;
