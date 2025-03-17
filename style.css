@@ -81,20 +81,20 @@ nav {
     overflow-x: hidden;
   }
   .nav-list {
-    display: none;
-    position: absolute;
+    display: flex;
+    position: fixed;
     top: 8vh;
-    right: 0;
+    right: -100%;
     width: 100%;
-    height: 80vh;
+    height: 92vh;
     background: #000f52;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    visibility: hidden; /* Esconde sem remover do fluxo */
-    opacity: 0; /* Deixa invisível */
+    transition: transform 0.5s ease;
+    z-index: 1000;
+    padding: 20px 0;
   }
 
   .nav-list.active {
@@ -102,12 +102,18 @@ nav {
     display: flex; /* Mostra o menu quando ativo */
     visibility: visible; /* Torna visível */
     opacity: 1;
+    right: 0;
   }
 
   .nav-list li {
-    margin-left: 0;
-    opacity: 0;
+    margin: 10px 0;
+    animation: none; /* Remove a animação padrão */
   }
+
+  .nav-list.active li {
+    animation: navLinkFade 0.5s ease forwards; /* Aplica a animação */
+  }
+  
   .mobile-menu {
     display: block;
   }
