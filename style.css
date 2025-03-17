@@ -66,6 +66,10 @@ nav {
 .mobile-menu {
   display: none;
   cursor: pointer;
+  position: absolute; /* Posiciona o ícone */
+  right: 20px; /* Alinha à direita */
+  
+  
 }
 
 .mobile-menu div {
@@ -113,9 +117,10 @@ nav {
   .nav-list.active li {
     animation: navLinkFade 0.5s ease forwards; /* Aplica a animação */
   }
-  
+
   .mobile-menu {
     display: block;
+    right: 50px;
   }
 }
 
