@@ -77,6 +77,9 @@ nav {
 }
 
 @media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -523,6 +526,9 @@ footer p {
 }
 
 @media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   .hero {
     flex-direction: column;
     text-align: center;
@@ -533,6 +539,9 @@ footer p {
   }
 }
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .hero .right {
     padding: 20px;
     text-align: center;
@@ -589,6 +598,9 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .left {
     padding: 0 10px;
     text-align: center;
@@ -687,6 +699,10 @@ footer p {
 }
 
 @media (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+  
   .yellow {
     font-size: 1.9rem;
   }
