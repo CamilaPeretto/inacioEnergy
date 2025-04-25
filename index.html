@@ -232,7 +232,18 @@
         Transformando energia em inovação para um futuro sustentável
       </p>
     </footer>
-
+    <script>
+      document.querySelectorAll('.offcanvas .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          const offcanvasElement = document.getElementById('offcanvasNavbar');
+          const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+          if (offcanvas) {
+            offcanvas.hide();
+          }
+        });
+      });
+    </script>
+    
     <script src="script.js"></script>
     <script type="application/ld+json">
       {
