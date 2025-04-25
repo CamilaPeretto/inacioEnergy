@@ -40,64 +40,6 @@ a:hover {
   font-family: "Helvetica", sans-serif;
 }
 
-
-
-
-
-@media (max-width: 991.98px) {
-  #offcanvasNavbar {
-    width: 80% !important; /* Menu menor */
-    max-width: 300px;
-    border-bottom-left-radius: 20px; /* Arredonda só canto inferior esquerdo */
-  }
-
-  .offcanvas-header {
-    justify-content: flex-end;
-    padding: 1rem;
-  }
-
-  .offcanvas-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    padding: 2rem 1rem;
-    flex-grow: 1;
-  }
-
-  .offcanvas-body .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .offcanvas-body .nav-item {
-    width: 100%;
-  }
-
-  .offcanvas-body .nav-link {
-    width: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white !important;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-  }
-
-  .offcanvas-body .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffc107 !important;
-  }
-}
-
-
-
-
 /* LAYOUT PRINCIPAL */
 .hero {
   display: flex;
